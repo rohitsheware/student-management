@@ -1,0 +1,9 @@
+{% extends 'student_management_system_app/home.html' %}
+
+{% block content %}
+<form action="" method="post" class="ms-5 mt-5 w-50">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success">
+</form>
+{% endblock %}
